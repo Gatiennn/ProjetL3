@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morpion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Morpion</h1>
+        <div id="board" class="board">
+            <!-- Grid will be generated dynamically here -->
+        </div>
+        <div class="options">
+            <button onclick="startGame('pvp')">Joueur contre Joueur</button>
+            <button onclick="startGame('pvc_easy')">Joueur contre IA (Facile)</button>
+            <button onclick="startGame('pvc_medium')">Joueur contre IA (Moyen)</button>
+            <button onclick="startGame('pvc_hard')">Joueur contre IA (Difficile)</button>
+        </div>
+        <div id="message" class="message"></div>
+        <button onclick="restartGame()">Rejouer</button>
+    </div>
+    <footer>
+        <a href="index.php" class="link">Retour à la page d'accueil</a>
+    </footer>
+    <script src="morpion.js"></script>
+</body>
+</html>

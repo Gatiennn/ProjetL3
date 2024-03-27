@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222; /* Couleur de fond plus sombre */
+    font-family: Arial, sans-serif; /* Police de caractères */
+}
+
+#game-container {
+    text-align: center;
+}
+
+#gameCanvas {
+    border: 2px solid #fff; /* Bordure plus épaisse */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Ombre légère */
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff; /* Couleur du texte en blanc */
+    font-size: 20px; /* Taille de police plus grande */
+}
+
+#restartBtn {
+    margin-top: 20px;
+    background-color: #3498db; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte en blanc */
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s ease; /* Transition de couleur au survol */
+}
+
+#restartBtn:hover {
+    background-color: #2980b9; /* Couleur de fond plus foncée au survol */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Pour s'assurer que le pied de page occupe toute la largeur */
+    background-color: #333; /* Couleur de fond */
+    padding: 10px 0; /* Espacement interne */
+    text-align: center;
+}
+
+footer a {
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Suppression du soulignement */
+    font-size: 16px; /* Taille de police */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}

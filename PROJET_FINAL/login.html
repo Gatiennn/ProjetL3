@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentification</title>
+    <link rel="stylesheet" href="styles_php.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Connexion</h2>
+        <form id="loginForm" method="post" action="login.php">
+            <input type="text" name="username" placeholder="Nom d'utilisateur" required>
+            <input type="password" name="password" placeholder="Mot de passe" required>
+            <button type="submit">Se connecter</button>
+        </form>
+        <p id="message"></p>
+        <button id="logoutBtn" style="display: none;">Déconnexion</button>
+        <button id="HomeBtn" style="background-color: rgb(242, 71, 106);">Retour à la page d'accueil</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

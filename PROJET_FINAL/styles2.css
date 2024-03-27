@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #87CEEB; /* Couleur ciel */
+    margin: 0;
+    padding: 0;
+}
+
+.game {
+    text-align: center;
+}
+
+.difficulty_buttons {
+    margin-bottom: 20px;
+}
+
+.difficulty_btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #3C7103;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.difficulty_btn:hover {
+    background-color: #2a5802;
+}
+
+.start_btn {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #1a8cff;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.start_btn:hover {
+    background-color: #0f5ad1;
+}
+
+.game_infos {
+    margin-bottom: 20px;
+}
+
+.score,
+.time {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.container {
+    height: 400px;
+    width: 500px;
+    border: 1px solid #999;
+    cursor: crosshair;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+#target {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    transition: 0.00001s;
+    animation: animateTarget 10s infinite;
+}
+
+@keyframes animateTarget {
+    to {
+        transform: translateY(-200px) rotate(90deg);
+    }
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.home_link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.home_link:hover {
+    color: #ffcc00;
+}

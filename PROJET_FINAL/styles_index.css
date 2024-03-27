@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("https://www.stardewvalley.net/wp-content/uploads/2013/07/mountainsBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Pour étendre le contenu jusqu'au bas de la page */
+}
+  
+.header {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#titre {
+  animation: entourer 2s infinite;
+  display: inline;
+}
+  
+header {
+    background-color: #333;
+    color: #fff;
+}
+  
+header h1 {
+    margin: 0;
+}
+  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+  
+a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+nav ul li a:hover {
+    color: #ffd700; /* couleur jaune dorée */
+}
+  
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.game {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.game:hover {
+    transform: translateY(-5px);
+}
+
+.game h2 {
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.game .play-button {
+    background-color: #444;
+    color: #fff;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0 0 10px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.game .play-button:hover {
+    background-color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Pour placer le footer en bas de la page */
+}
+
+h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  display: flex;
+}
+
+@keyframes entourer {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0px 30px 0px rgb(255, 251, 0);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes logo {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0 30px red;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+#titre {
+  animation: entourer 2s infinite;
+  display: inline;
+}
+
+#logo {
+  font-size: 50px;
+  animation: logo 2s infinite;
+  display: inline;
+}
+
+hr {
+  margin-top: 35px;
+  margin-bottom: 40px;
+  color: white;
+  width: 10%;
+  align-self: center;
+}
+
+p {
+  text-align: center;
+  color: white;
+  font-size: larger;
+}
+
+.bloc-text{
+  background-color: rgba(2, 2, 2, 0.5);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 20px; 
+  margin-top: 20px;
+  border: 2px solid white; /* Ajout de la bordure */
+  border-radius: 10px; /* Arrondi des coins */
+  width: 75%; /* Exemple : Définit la largeur à 70% de la largeur de son conteneur */
+  max-width: 1800px; /* Exemple : Limite la largeur maximale à 800 pixels */
+  height: auto; /* Ajuste automatiquement la hauteur en fonction du contenu */
+  margin: 20px auto; 
+  display: block;
+}
+
+img {
+  width:100px;
+  border: 5px solid #555;
+}
+
+.blink {
+  animation: blinker 1s step-start infinite;
+  font-size: 30px;
+  color:yellow;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
